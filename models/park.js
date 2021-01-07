@@ -20,5 +20,10 @@ Park.prototype.removeDino = function(dinosaur) {
     
     }
 }
+
+Park.prototype.mostAttractiveDino = function() {
+    
+}
+
   
   module.exports = Park;
