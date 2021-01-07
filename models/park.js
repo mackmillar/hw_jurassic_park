@@ -22,6 +22,15 @@ Park.prototype.removeDino = function(dinosaur) {
 }
 
 Park.prototype.mostAttractiveDino = function() {
+    let mostPopularDino;
+    let numOfGuests = 0;
+    for(currentDino of this.dinosaurs){
+        if(currentDino.guestsAttractedPerDay > numOfGuests){
+            mostPopularDino = currentDino;
+            numOfGuests = currentDino.guestsAttractedPerDay;
+        }
+    }
+    return mostPopularDino;
     
 }
 
